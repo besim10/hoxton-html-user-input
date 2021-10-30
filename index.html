@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>hoxton html user input</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <main>
+        <form>
+            <h1>Hey there!</h1>
+            <ul class="list-item">
+                <li>
+                   <label>
+                        <p>What's your name?</p>
+                        <input class ="name"type="text" name="name" placeholder="Enter your name"
+                            required 
+                                minlength="2" maxlength="20" size="auto">
+                   </label>
+                   <label>
+                    <p>What's your email address?</p>
+                    <input class ="name"type="email" name="email" placeholder="Enter your email address"
+                        required>
+                    </label>
+                    <label>
+                        <p>What services are you looking for?</p>
+                        <select name="services" required>
+                            <option value="" selected disabled hidden>Choose a service</option>
+                            <option value="cloudS">Cloud Services</option>
+                            <option value="Backup">Backup and Disaster Recovery</option>
+                            <option value="NetSec">Network Security</option>
+                            <option value="ITcons">IT Consulting</option>
+                            <option value="Support">Help Desk Support</option>
+                        </select>
+                    </label>
+                    <label>
+                        <p>What is your budget?</p>
+                        <select name="services" required>
+                            <option value="" selected disabled hidden>Select Budget</option>
+                            <option value="50-">0-50 $</option>
+                            <option value="500-">50-500 $</option>
+                            <option value="3000-">500-3.000 $</option>
+                            <option value="25000-">3.000-25.000 $</option>
+                            <option value="50000-">25.000-50.000 $</option>
+                            <option value="100000-">100.000 $+</option>
+                        </select>
+                    </label>
+                    <label>
+                        <p>Anything else you'd like to tell us?</p>
+                        <textarea name="comment" placeholder="Your message here..."></textarea>
+                        
+                    </label> 
+                    <label class="agree">
+                        <p>I agree with the T&Cs.</p>
+                        <input type="checkbox" name="agreeToTerms" required />
+                    </label>
+                    <button class="button" type="submit">
+                        Submit →
+                    </button> 
+                </li>
+            </ul>
+        </form>
+    </main>
+</body>
+</html>
